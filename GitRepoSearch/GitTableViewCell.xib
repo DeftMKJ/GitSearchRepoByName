@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GitTableViewCell" id="KGk-i7-Jjw" customClass="GitTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gR4-Py-A2C">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="gR4-Py-A2C" secondAttribute="height" multiplier="1:1" id="Xuw-SD-iV6"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQa-Lh-Omw">
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="repoName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDL-36-6cm">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eDL-36-6cm" firstAttribute="bottom" secondItem="gR4-Py-A2C" secondAttribute="bottom" id="5WK-yD-wk0"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eDL-36-6cm" secondAttribute="trailing" constant="10" id="Cyr-tP-c8u"/>
+                    <constraint firstItem="gR4-Py-A2C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="EQl-Oz-1Jm"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gR4-Py-A2C" secondAttribute="bottom" id="I9h-5l-nJJ"/>
+                    <constraint firstItem="gR4-Py-A2C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="IIT-MO-yv7"/>
+                    <constraint firstItem="CQa-Lh-Omw" firstAttribute="leading" secondItem="gR4-Py-A2C" secondAttribute="trailing" constant="7.5" id="K95-VY-OCJ"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CQa-Lh-Omw" secondAttribute="trailing" constant="10" id="nAi-Ul-4ve"/>
+                    <constraint firstItem="eDL-36-6cm" firstAttribute="leading" secondItem="gR4-Py-A2C" secondAttribute="trailing" constant="8" id="su7-L1-Kun"/>
+                    <constraint firstItem="CQa-Lh-Omw" firstAttribute="top" secondItem="gR4-Py-A2C" secondAttribute="top" id="wLw-Fu-T0f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarImageView" destination="gR4-Py-A2C" id="JEX-Xk-Go4"/>
+                <outlet property="ownerNamelabel" destination="CQa-Lh-Omw" id="eD3-43-RQg"/>
+                <outlet property="repoNameLabel" destination="eDL-36-6cm" id="a7Z-jv-nt0"/>
+            </connections>
+            <point key="canvasLocation" x="610" y="63"/>
+        </tableViewCell>
+    </objects>
+</document>
